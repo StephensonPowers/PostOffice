@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using PostOffice.Server.Models;
 
 namespace PostOffice.Controllers;
 

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace PostOffice.Controllers;
+namespace PostOffice.Server.Controllers;
 
 [ApiController]
 [Route("[controller]")]

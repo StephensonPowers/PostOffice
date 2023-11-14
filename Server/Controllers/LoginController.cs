@@ -16,7 +16,7 @@ namespace PostOffice.Server.Controllers
             _configuration = configuration;
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("Registration")]
         public IActionResult Registration(User user)
         {
@@ -49,7 +49,7 @@ namespace PostOffice.Server.Controllers
             }
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("Login")]
         public async Task<IActionResult> Login(User user)
         {
@@ -68,6 +68,7 @@ namespace PostOffice.Server.Controllers
             }
             else
             {
+                Console.WriteLine("Invalid Login");
                 return RedirectToAction("Index", "Login");
             }
         }
